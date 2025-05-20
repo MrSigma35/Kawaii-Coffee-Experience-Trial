@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kawaii Coffee Experience</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom, #b4d4ef, #a5c3e6);
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+
+    .search-bar {
+      background: #fff;
+      border-radius: 20px;
+      padding: 0.4rem 1rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .search-bar input {
+      border: none;
+      outline: none;
+      background: transparent;
+    }
+
+    main {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 span {
+      background: #8fd3f4;
+      color: #fff;
+      padding: 0.2rem 0.6rem;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 1rem 0;
+    }
+
+    .coffee-cat {
+      position: relative;
+      width: 300px;
+      margin: 2rem auto;
+    }
+
+    .coffee-cat img {
+      width: 100%;
+    }
+
+    .bubble {
+      position: absolute;
+      background: #fff;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      animation: float 4s infinite ease-in-out;
+    }
+
+    .bubble:nth-child(1) { top: 10%; left: 10%; background: #f8c9d4; transform: rotate(-10deg); }
+    .bubble:nth-child(2) { top: 20%; right: 15%; background: #fcd37e; transform: rotate(5deg); }
+    .bubble:nth-child(3) { top: 40%; left: 20%; background: #a2d5f2; transform: rotate(-5deg); }
+    .bubble:nth-child(4) { top: 55%; right: 10%; background: #bca0dc; transform: rotate(15deg); }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-10px) scale(1.05); }
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">kawaii<br>kava.</div>
+    <nav>
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">products</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search">
+    </div>
+  </header>
+
+  <main>
+    <p>IT'S TIME FOR</p>
+    <h1><span>Kawaii</span> Coffee Experience</h1>
+    <div class="coffee-cat">
+      <img src="coffee.jpg" alt="Cute Coffee Cat" />
+      <div class="bubble">Unreal</div>
+      <div class="bubble">Awesome!</div>
+      <div class="bubble">( ^_^ )</div>
+      <div class="bubble">Perfect!</div>
+        <div class="bubble">fantastic!</div>
+           <div class="bubble">Super!</div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Kawaii Kava. All rights reserved.
+  </footer>
+</body>
+</html>
